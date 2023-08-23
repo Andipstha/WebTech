@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>URL Class</title>
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for the navigation bar */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+  }
+  nav a:hover{
+    background-color:white;
+    color: black;
+  }
+  /* Styling for the post area */
+  .post-area {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-area h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .post-area p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .img{
+    /* width: 300px; */
+    image-rendering: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <base href="https://kist.edu.np/">
+            <ul class="nav-list">
+                <li><a href="program/bit" target="_parent">BIT</a></li>
+                <li><a href="program/bim" target="_self">BIM</a></li>
+                <li><a href="program/mit" target="_blank">MIT</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <img src="/Users/sandipshrestha/Downloads/[03] WebDev/[00] WebTech/1.Introduction_to_HTML_XHTML/pp.jpg" alt="">
+ <div class="post-area">
+    <a href="https://kist.edu.np/" target="_blank">
+        <img class="img" src="https://kist-edu-np.s3.ap-south-1.amazonaws.com/uploads/media/85d108dc30faacc70ccd43730b40a7ace89617781626772843.jpg" alt="Deepak Khadka">
+    </a>
+
+    <!-- <img src="https://kist-edu-np.s3.ap-south-1.amazonaws.com/uploads/media/85d108dc30faacc70ccd43730b40a7ace89617781626772843.jpg" alt=""> -->
+    <p>
+        Dear Students<br>
+        Welcome to Bachelor of Information Technology at KIST!<br>
+        BIT empowers its students with IT skills that help moulding them into skillful IT professionals. We are dedicated to providing our graduates with top quality education emphasizing a practical approach to teaching-learning. Our proficient lecturers working in a disciplined yet friendly environment focus on both the regular course and extra courses. Fine guest lectures keep our students updated with advancements in IT.<br>
+        Students have abundant resources, such as network labs with multimedia or an e-library, to help them study and explore their fields. Extra project work and workshops every semester make students more productive. The College is a unique learning place for achieving academic excellence & assuring a promising future.<br>
+        Regards<br>
+        Deepak Khadka<br>
+        Coordinator, BIT<br>
+
+    </p>
+ </div>   
+ 
+</body>
+</html>

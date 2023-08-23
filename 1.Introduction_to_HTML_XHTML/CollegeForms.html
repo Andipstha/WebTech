@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>Forms</title>
+        <style>
+            body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+            input[type=text], select {
+              width: 100%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+            }
+            
+            input[type=submit],[type=button],[type=reset]{
+              width: 100%;
+              background-color: #044D94;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+            
+            input[type=submit]:hover {
+              background-color: #044D94;
+            }
+            
+            div {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: #044D94;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #F7941E;
+            border-radius: 4px;
+            }
+            input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #F7941E;
+            border-radius: 4px;
+            }
+            input[type=email] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #F7941E;
+            border-radius: 4px;
+            }
+            button{
+                background-color: blue;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+           /* Center the image and position the close button */
+            .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+            }
+
+            img.avatar {
+            width: 40%;
+            border-radius: 50%;
+            }
+
+            .container {
+            padding: 16px;
+            }
+            select{
+                border: 2px solid #F7941E;
+            }
+
+            /* Create a custom checkbox */
+            .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            }
+
+            </style>
+    </head>
+    <body>
+        
+        
+        <form>
+            <div>
+                <div class="imgcontainer">
+                    <img src="https://kist.edu.np/resources/assets/img/logo_small.jpg" alt="Avatar" class="avatar">
+                </div>
+
+              
+                <select name = "dropdown" >
+                    <!-- <option disabled selected value> </option> -->
+                    <option hidden disabled selected value> -- select an option -- </option>
+                    <option value = "Teacher" >Teacher</option>
+                    <option value = "Student">Student</option>
+                    <option value = "Guest" >Guest Lorem ipsum dorem</option>
+                </select> <br>
+                <input type="radio" name="gender" value="male"> Mr <input type="radio" name="gender" value="female"> Ms <br>
+
+                <label><b>Last Name: </b></label><input type="text" name="name" placeholder="Last name"> <br>
+                <label><b>First Name: </b></label><input type="text" name="name" placeholder="First name"> <br>
+                <label><b>Phone No: </b></label><input type="text" name="name" placeholder="Phone no"> <br>
+                <label><b>Gmail: </b></label><input type="email" name="name" placeholder="Email"> <br>
+                <label><b>Courses</b></label>
+                <select>
+                    <option hidden disable selected value"> -- select an option -- </option>
+                    <option value="">BIT</option>
+                    <option value="">BBA</option>
+                    <option>BCA</option>
+                </select>
+                <label><b>Address</b></label>
+                <label><b></b></label>
+
+
+                <input type="submit" value="Confirm"><br>
+                <input type="reset" value="Reset"><br>
+                <input type="button" value="Upload"> <br>
+
+                <!-- <input type="submit" value="Submit"> <br> -->
+                <!-- <input type="reset" value="Reset"> <br> -->
+                <!-- <input type="button" value="Upload"> -->
+                <!-- <button type="button" value="button">Submit</button> -->
+            </div>
+            
+          </form>
+          
+    </body>
+
+
+
+    
+</html>

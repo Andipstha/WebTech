@@ -1,0 +1,35 @@
+html
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Change Color Button</title>
+	<style>
+		body {
+			background-color: #f2f2f2; /* light background color */
+			color: #333; /* light text color */
+		}
+		.dark-mode {
+			background-color: #333; /* dark background color */
+			color: #f2f2f2; /* dark text color */
+		}
+	</style>
+
+</head>
+
+<body>
+	<button onclick="toggleDarkMode()">Toggle Color</button>
+
+	<script>
+		function toggleDarkMode() {
+			var body = document.querySelector('body');
+			body.classList.toggle('dark-mode');
+		}
+	</script>
+
+</body>
+
+</html>
+

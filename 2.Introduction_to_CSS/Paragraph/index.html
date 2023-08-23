@@ -1,0 +1,157 @@
+<html>
+<head>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 5px;
+            text-align: justify;
+        }
+        .para{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-decoration: line-through;
+        }
+        img{
+            vertical-align: bottom;
+            width: 30px;
+        }
+        span{
+            background-color: chartreuse;
+        }
+        body {
+			background-color: #f2f2f2; /* light background color */
+			color: #333; /* light text color */
+		}
+		.dark-mode {
+			background-color: #333; /* dark background color */
+			color: #f2f2f2; /* dark text color */
+		}
+        #newpara{
+            color:coral;
+            font-size: 50px;
+        }
+        #spann{
+            background-color: #f2f2f2;
+            font-size: 50px;
+        }
+
+        /* innocent child */
+        li > p{
+            font-size: large;
+            color: blueviolet;
+        }
+        ul{
+            font-size: 50px;
+            color: blueviolet;
+        }
+        h1+h2{
+            font-family: cursive;
+            border-bottom: solid black medium ;
+        }
+/* <!-- Type Selector  --> */
+        h4,h5{
+            font-size: 50px;
+
+        }
+
+        table, th, td {
+        border:1px solid black;
+}
+       
+
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+          <th>Types</th>
+          <th>Desc</th>
+        </tr>
+        <tr>
+          <td>Class</td>
+          <td>.class</td>
+        </tr>
+        <tr>
+            <td>Id</td>
+            <td>#id</td>
+        </tr>
+        <tr>
+          <td>Child</td>
+          <td>li>p</td>
+        </tr>
+        <tr>
+            <td>Decendent</td>
+            <td>ul>li*3</td>
+        </tr>
+        <tr>
+            <td>Universal</td>
+            <td>* (all)</td>
+        </tr>
+        <tr>
+            <td>Adjecent</td>
+            <td>a + p</td>
+        </tr>
+        <tr>
+            <td>Type Selector</td>
+            <td>div > span</td>
+        </tr>
+      </table>
+    <p>
+        class : 
+        Id :
+        child :
+        Decendent :
+        universal :
+        Adjecent :
+        Type :
+    </p>
+
+    <button onclick="toggleDarkMode()">Toggle Color</button>
+
+	<script>
+		function toggleDarkMode() {
+			var body = document.querySelector('body');
+			body.classList.toggle('dark-mode');
+		}
+	</script>
+
+<p >
+    Lorem ipsum dolor sit amet <span> adipisicing</span> elit. Dolor, nulla. Debitis velit alias repellat, soluta iste accusantium at dolorum tempore neque! Odio natus quisquam excepturi tenetur consectetur, corrupti voluptates eveniet.
+</p>
+<div>
+    <h1 id="newpara">
+        Lorem ipsum dolor sit amet,
+    </h1>
+    <p>
+        <span id="spann">L</span>orem, ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis, ea minus sit maiores beatae ipsa? Ex assumenda tempore distinctio fugit nostrum, cumque minima explicabo? Odio aut debitis neque asperiores!
+    </p>
+</div>
+
+
+<p class="para">This is the <img src="https://kist.edu.np/resources/assets/img/logo_small.jpg" alt="">first para</p>
+
+<ul>
+    <li>
+        <p>Paragraph</p>
+    </li>
+</ul>
+
+<h1>First Heading</h1>
+<h2>Second Heading</h2>
+<h3>Third Heading</h3>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, quibusdam? Ex, enim porro. Aliquam, fuga neque? Aspernatur, recusandae est magni fugit, ea eos rem veniam ducimus inventore, velit ipsam veritatis!</p>
+
+<h4>Fourth Heading</h4>
+<h5>Fifth Heading</h5>
+</body>
+</html>
